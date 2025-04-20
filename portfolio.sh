@@ -10,19 +10,19 @@ GREEN="\e[1;32m"
 YELLOW="\e[1;33m"
 RESET="\e[0m"
 
-# Print ASCII art from file
-if [ -f "$(dirname "$0")/assets/ascii-logo.txt" ]; then
-  cat "$(dirname "$0")/assets/ascii-logo.txt"
-else
-  echo -e "${PINK}"
-  echo "   ____                        _             _  __  "
-  echo "  |  _ \  ___  ___ ___   ___ | |_ ___  _ __| |/ /  "
-  echo "  | | | |/ _ \/ __/ __| / _ \| __/ _ \| '__| ' /   "
-  echo "  | |_| |  __/\__ \__ \| (_) | || (_) | |  | . \   "
-  echo "  |____/ \___||___/___(_)___/ \__\___/|_|  |_|\_\  "
-  echo "               🧠 DeadpoolX7 Terminal Card          "
-  echo -e "${RESET}"
-fi
+#ASCII Art - Sanju Shaw
+echo -e "${PINK}"
+cat << "EOF"
+     _______.     ___      .__   __.        __   __    __          _______. __    __       ___   ____    __    ____
+    /       |    /   \     |  \ |  |       |  | |  |  |  |        /       ||  |  |  |     /   \  \   \  /  \  /   /
+   |   (----`   /  ^  \    |   \|  |       |  | |  |  |  |       |   (----`|  |__|  |    /  ^  \  \   \/    \/   /
+    \   \      /  /_\  \   |  . `  | .--.  |  | |  |  |  |        \   \    |   __   |   /  /_\  \  \            /
+.----)   |    /  _____  \  |  |\   | |  `--'  | |  `--'  |    .----)   |   |  |  |  |  /  _____  \  \    /\    /
+|_______/    /__/     \__\ |__| \__|  \______/   \______/     |_______/    |__|  |__| /__/     \__\  \__/  \__/
+
+             🧠 Sanju Shaw's Terminal Card
+EOF
+echo -e "${RESET}"
 
 echo -e "${CYAN}🧑 About Me:${RESET}"
 echo "I'm a passionate full-stack developer specializing in the MERN stack,"
